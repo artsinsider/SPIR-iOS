@@ -9,94 +9,71 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var loginButton: UIButton!
     
-    private let loginContentView:UIView = {
-        let view = UIView()
+    private(set) lazy var loginLable: UILabel = {
+        let view = UILabel()
+        view.text = "Терминал"
+        view.font = UIFont.boldSystemFont(ofSize:60)
+        view.textColor = .blue
         view.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(view)
         return view
     }()
     
-    private let userNameTextField:UITextField = {
-        let txtField = UITextField()
-        txtField.backgroundColor = .white
-        txtField.placeholder = "ID пользователя или электронная почта"
-        txtField.borderStyle = .roundedRect
-        txtField.translatesAutoresizingMaskIntoConstraints = false
-        return txtField
+    private(set) lazy var loginContentView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.clipsToBounds = true
+        self.view.addSubview(view)
+        return view
     }()
     
-    private let passwordTextField:UITextField = {
-         let passField = UITextField()
-         passField.backgroundColor = .white
-         passField.placeholder = "Пароль"
-         passField.borderStyle = .roundedRect
-         passField.translatesAutoresizingMaskIntoConstraints = false
-         return passField
-     }()
-    
-    private let btnLogin:UIButton = {
-        let btn = UIButton(type: .system)
-        btn.backgroundColor = .blue
-        btn.setTitle("ВОЙТИ", for: .normal)
-        btn.tintColor = .white
-        btn.layer.cornerRadius = 5
-        btn.clipsToBounds = true
-        btn.translatesAutoresizingMaskIntoConstraints = false
-        
-        return btn
+    private(set) lazy var userNameTextField: UITextField = {
+        let view = UITextField()
+        view.backgroundColor = .white
+        view.placeholder = "ID пользователя или электронная почта"
+        view.borderStyle = .roundedRect
+        view.translatesAutoresizingMaskIntoConstraints = false
+        self.loginContentView.addSubview(view)
+        return view
     }()
     
-    private let loginLable:UILabel = {
-        let logLable = UILabel()
-        logLable.text = "Терминал"
-        logLable.font = UIFont.boldSystemFont(ofSize:60)
-        logLable.textColor = .blue
-        logLable.translatesAutoresizingMaskIntoConstraints = false
-        
-        return logLable
+    private(set) lazy var passwordTextField: UITextField = {
+         let view = UITextField()
+         view.backgroundColor = .white
+         view.placeholder = "Пароль"
+         view.borderStyle = .roundedRect
+         view.translatesAutoresizingMaskIntoConstraints = false
+         self.loginContentView.addSubview(view)
+         return view
     }()
+    
+    private(set) lazy var btnLogin: UIButton = {
+        let view = UIButton(type: .system)
+        view.backgroundColor = .blue
+        view.setTitle("ВОЙТИ", for: .normal)
+        view.tintColor = .white
+        view.layer.cornerRadius = 5
+        view.clipsToBounds = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        self.loginContentView.addSubview(view)
+        return view
+    }()
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.willShowKeyboard(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.willHideKeyboard(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
 
-        view.backgroundColor = .white
-        view.addSubview(loginLable)
+        self.view.backgroundColor = .white
         
-        loginContentView.addSubview(userNameTextField)
-        loginContentView.addSubview(passwordTextField)
-        loginContentView.addSubview(btnLogin)
-        
-        view.addSubview(loginContentView)
-        
-        // Ограничения для лейбла
-        loginLable.topAnchor.constraint(equalTo: view.topAnchor, constant: 190).isActive = true
-        loginLable.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        
-        // Ограничения для родительской обертки
-        loginContentView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        loginContentView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        loginContentView.heightAnchor.constraint(equalToConstant: view.frame.height/4).isActive = true
-        loginContentView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        
-        // Ограничения для поля userNameTextField
-        userNameTextField.topAnchor.constraint(equalTo: loginContentView.topAnchor, constant: 40).isActive = true
-        userNameTextField.leftAnchor.constraint(equalTo: loginContentView.leftAnchor, constant: 40).isActive = true
-        userNameTextField.rightAnchor.constraint(equalTo: loginContentView.rightAnchor, constant: -40).isActive = true
-        userNameTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        
-        // Ограничения для поля passwordTextField
-        passwordTextField.topAnchor.constraint(equalTo: userNameTextField.bottomAnchor, constant: 20).isActive = true
-        passwordTextField.leftAnchor.constraint(equalTo: loginContentView.leftAnchor, constant: 40).isActive = true
-        passwordTextField.rightAnchor.constraint(equalTo: loginContentView.rightAnchor, constant: -40).isActive = true
-        passwordTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        
-        // Ограничения для кнопки btnLogin
-        btnLogin.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 40).isActive = true
-        btnLogin.leftAnchor.constraint(equalTo: loginContentView.leftAnchor, constant: 40).isActive = true
-        btnLogin.rightAnchor.constraint(equalTo: loginContentView.rightAnchor, constant: -40).isActive = true
-        btnLogin.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        self.buildContent()
     }
-
 
 }
