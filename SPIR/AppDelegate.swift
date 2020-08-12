@@ -1,9 +1,5 @@
 //
-//  AppDelegate.swift
 //  SPIR
-//
-//  Created by Egor on 30.05.2020.
-//  Copyright © 2020 TASS. All rights reserved.
 //
 
 import UIKit
@@ -11,15 +7,18 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    lazy var context = AppContext(
+        url: URL(string: "https://terminal.tass.ru/api/v2")!
+    )
+    lazy var wireframe = AppWireframe(context: self.context)
+    public var window: UIWindow? {
+        set(value) { fatalError("Unsupported method '\(#function)'") }
+        get { return self.wireframe.window }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window!.rootViewController = ViewController()
-        window!.makeKeyAndVisible()
+        self.wireframe.launch(launchOptions)
         return true
     }
 
-
 }
-

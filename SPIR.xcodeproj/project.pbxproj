@@ -7,17 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400BF72624E466DA002E448E /* ILoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400BF72524E466DA002E448E /* ILoginManager.swift */; };
+		400BF72A24E46859002E448E /* ObserverPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400BF72924E46859002E448E /* ObserverPriority.swift */; };
+		400BF72D24E4690B002E448E /* ApiLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400BF72C24E4690B002E448E /* ApiLoginManager.swift */; };
+		400BF73024E46C46002E448E /* AppWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400BF72F24E46C46002E448E /* AppWireframe.swift */; };
+		400BF73324E46CA9002E448E /* IAppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400BF73224E46CA9002E448E /* IAppContext.swift */; };
+		400BF73524E46CE0002E448E /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400BF73424E46CE0002E448E /* AppContext.swift */; };
+		400BF73E24E46F17002E448E /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400BF73D24E46F17002E448E /* LoginScreen.swift */; };
+		400BF74024E46FCF002E448E /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400BF73F24E46FCF002E448E /* LoginScreenViewController.swift */; };
+		400BF74224E47046002E448E /* LoginScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 400BF74124E47046002E448E /* LoginScreenViewController.xib */; };
+		400BF74524E472C9002E448E /* LoginScreenContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400BF74324E472C9002E448E /* LoginScreenContext.swift */; };
+		400BF74624E472C9002E448E /* LoginScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400BF74424E472C9002E448E /* LoginScreenRouter.swift */; };
+		400BF74724E4737E002E448E /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400BF73624E46E82002E448E /* LoginWireframe.swift */; };
 		406CA59E2483E98900294AAE /* ViewController+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406CA59D2483E98900294AAE /* ViewController+Constraint.swift */; };
 		406CA5A12483EAE700294AAE /* ViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406CA5A02483EAE700294AAE /* ViewController+Keyboard.swift */; };
+		4070CEE624E45CBB002B3F01 /* Quickly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4070CEE424E45CAF002B3F01 /* Quickly.framework */; };
+		4070CEEE24E45D57002B3F01 /* IUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4070CEED24E45D57002B3F01 /* IUser.swift */; };
+		4070CEF024E45E31002B3F01 /* ApiUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4070CEEF24E45E31002B3F01 /* ApiUser.swift */; };
+		4070CEF224E45F3D002B3F01 /* ApiLoginQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4070CEF124E45F3D002B3F01 /* ApiLoginQuery.swift */; };
+		4070CEF424E460A2002B3F01 /* ApiQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4070CEF324E460A2002B3F01 /* ApiQuery.swift */; };
+		4070CEF724E461C7002B3F01 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4070CEF624E461C7002B3F01 /* ApiError.swift */; };
+		4070CEFA24E46328002B3F01 /* IApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4070CEF924E46328002B3F01 /* IApiProvider.swift */; };
+		4070CEFD24E463C4002B3F01 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4070CEFC24E463C4002B3F01 /* ApiProvider.swift */; };
 		744DCE172482992C00B51C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744DCE162482992C00B51C63 /* AppDelegate.swift */; };
 		744DCE1B2482992C00B51C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744DCE1A2482992C00B51C63 /* ViewController.swift */; };
 		744DCE202482992E00B51C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744DCE1F2482992E00B51C63 /* Assets.xcassets */; };
 		744DCE232482992E00B51C63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744DCE212482992E00B51C63 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4070CEE324E45CAF002B3F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4070CEDF24E45CAF002B3F01 /* Quickly.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 401829591F4C1C0A005C9949;
+			remoteInfo = Quickly;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		400BF72524E466DA002E448E /* ILoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoginManager.swift; sourceTree = "<group>"; };
+		400BF72924E46859002E448E /* ObserverPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverPriority.swift; sourceTree = "<group>"; };
+		400BF72C24E4690B002E448E /* ApiLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLoginManager.swift; sourceTree = "<group>"; };
+		400BF72F24E46C46002E448E /* AppWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWireframe.swift; sourceTree = "<group>"; };
+		400BF73224E46CA9002E448E /* IAppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAppContext.swift; sourceTree = "<group>"; };
+		400BF73424E46CE0002E448E /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		400BF73624E46E82002E448E /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		400BF73D24E46F17002E448E /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		400BF73F24E46FCF002E448E /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		400BF74124E47046002E448E /* LoginScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginScreenViewController.xib; sourceTree = "<group>"; };
+		400BF74324E472C9002E448E /* LoginScreenContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenContext.swift; sourceTree = "<group>"; };
+		400BF74424E472C9002E448E /* LoginScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenRouter.swift; sourceTree = "<group>"; };
 		406CA59D2483E98900294AAE /* ViewController+Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Constraint.swift"; sourceTree = "<group>"; };
 		406CA5A02483EAE700294AAE /* ViewController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		4070CEDF24E45CAF002B3F01 /* Quickly.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quickly.xcodeproj; path = Quickly/Quickly.xcodeproj; sourceTree = "<group>"; };
+		4070CEED24E45D57002B3F01 /* IUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUser.swift; sourceTree = "<group>"; };
+		4070CEEF24E45E31002B3F01 /* ApiUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUser.swift; sourceTree = "<group>"; };
+		4070CEF124E45F3D002B3F01 /* ApiLoginQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLoginQuery.swift; sourceTree = "<group>"; };
+		4070CEF324E460A2002B3F01 /* ApiQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiQuery.swift; sourceTree = "<group>"; };
+		4070CEF624E461C7002B3F01 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		4070CEF924E46328002B3F01 /* IApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IApiProvider.swift; sourceTree = "<group>"; };
+		4070CEFC24E463C4002B3F01 /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
 		744DCE132482992C00B51C63 /* SPIR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPIR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		744DCE162482992C00B51C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		744DCE1A2482992C00B51C63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +81,136 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4070CEE624E45CBB002B3F01 /* Quickly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		400BF72B24E468FB002E448E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				400BF72524E466DA002E448E /* ILoginManager.swift */,
+				400BF72C24E4690B002E448E /* ApiLoginManager.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		400BF72E24E46C2D002E448E /* Wirefame */ = {
+			isa = PBXGroup;
+			children = (
+				400BF72F24E46C46002E448E /* AppWireframe.swift */,
+				400BF73624E46E82002E448E /* LoginWireframe.swift */,
+			);
+			path = Wirefame;
+			sourceTree = "<group>";
+		};
+		400BF73124E46C6F002E448E /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				400BF73224E46CA9002E448E /* IAppContext.swift */,
+				400BF73424E46CE0002E448E /* AppContext.swift */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
+		400BF73A24E46EF2002E448E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				400BF73B24E46EF9002E448E /* Login */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		400BF73B24E46EF9002E448E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				400BF73D24E46F17002E448E /* LoginScreen.swift */,
+				400BF74324E472C9002E448E /* LoginScreenContext.swift */,
+				400BF74424E472C9002E448E /* LoginScreenRouter.swift */,
+				400BF73F24E46FCF002E448E /* LoginScreenViewController.swift */,
+				400BF74124E47046002E448E /* LoginScreenViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4070CEE024E45CAF002B3F01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4070CEE424E45CAF002B3F01 /* Quickly.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4070CEE524E45CBB002B3F01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4070CEE724E45CE0002B3F01 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				4070CEEB24E45D23002B3F01 /* Model */,
+				4070CEEA24E45D1B002B3F01 /* Query */,
+				4070CEEC24E45D28002B3F01 /* Provider */,
+				4070CEF624E461C7002B3F01 /* ApiError.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		4070CEE824E45CEA002B3F01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4070CEED24E45D57002B3F01 /* IUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4070CEE924E45CF2002B3F01 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				400BF72B24E468FB002E448E /* Login */,
+				400BF72924E46859002E448E /* ObserverPriority.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4070CEEA24E45D1B002B3F01 /* Query */ = {
+			isa = PBXGroup;
+			children = (
+				4070CEF324E460A2002B3F01 /* ApiQuery.swift */,
+				4070CEF124E45F3D002B3F01 /* ApiLoginQuery.swift */,
+			);
+			path = Query;
+			sourceTree = "<group>";
+		};
+		4070CEEB24E45D23002B3F01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4070CEEF24E45E31002B3F01 /* ApiUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4070CEEC24E45D28002B3F01 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				4070CEF924E46328002B3F01 /* IApiProvider.swift */,
+				4070CEFC24E463C4002B3F01 /* ApiProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
 		744DCE0A2482992C00B51C63 = {
 			isa = PBXGroup;
 			children = (
+				4070CEDF24E45CAF002B3F01 /* Quickly.xcodeproj */,
 				744DCE152482992C00B51C63 /* SPIR */,
 				744DCE142482992C00B51C63 /* Products */,
+				4070CEE524E45CBB002B3F01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +225,12 @@
 		744DCE152482992C00B51C63 /* SPIR */ = {
 			isa = PBXGroup;
 			children = (
+				4070CEE824E45CEA002B3F01 /* Model */,
+				4070CEE724E45CE0002B3F01 /* Api */,
+				4070CEE924E45CF2002B3F01 /* Manager */,
+				400BF73124E46C6F002E448E /* Context */,
+				400BF72E24E46C2D002E448E /* Wirefame */,
+				400BF73A24E46EF2002E448E /* Screen */,
 				744DCE162482992C00B51C63 /* AppDelegate.swift */,
 				744DCE1A2482992C00B51C63 /* ViewController.swift */,
 				406CA5A02483EAE700294AAE /* ViewController+Keyboard.swift */,
@@ -113,6 +288,12 @@
 			mainGroup = 744DCE0A2482992C00B51C63;
 			productRefGroup = 744DCE142482992C00B51C63 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4070CEE024E45CAF002B3F01 /* Products */;
+					ProjectRef = 4070CEDF24E45CAF002B3F01 /* Quickly.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				744DCE122482992C00B51C63 /* SPIR */,
@@ -120,11 +301,22 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		4070CEE424E45CAF002B3F01 /* Quickly.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quickly.framework;
+			remoteRef = 4070CEE324E45CAF002B3F01 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		744DCE112482992C00B51C63 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				400BF74224E47046002E448E /* LoginScreenViewController.xib in Resources */,
 				744DCE232482992E00B51C63 /* LaunchScreen.storyboard in Resources */,
 				744DCE202482992E00B51C63 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +329,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				400BF74724E4737E002E448E /* LoginWireframe.swift in Sources */,
 				744DCE1B2482992C00B51C63 /* ViewController.swift in Sources */,
+				4070CEF424E460A2002B3F01 /* ApiQuery.swift in Sources */,
+				4070CEEE24E45D57002B3F01 /* IUser.swift in Sources */,
+				400BF73E24E46F17002E448E /* LoginScreen.swift in Sources */,
+				400BF74024E46FCF002E448E /* LoginScreenViewController.swift in Sources */,
+				400BF73524E46CE0002E448E /* AppContext.swift in Sources */,
+				400BF72A24E46859002E448E /* ObserverPriority.swift in Sources */,
+				400BF72624E466DA002E448E /* ILoginManager.swift in Sources */,
 				744DCE172482992C00B51C63 /* AppDelegate.swift in Sources */,
+				400BF74524E472C9002E448E /* LoginScreenContext.swift in Sources */,
+				4070CEF024E45E31002B3F01 /* ApiUser.swift in Sources */,
+				4070CEF724E461C7002B3F01 /* ApiError.swift in Sources */,
+				400BF74624E472C9002E448E /* LoginScreenRouter.swift in Sources */,
+				400BF72D24E4690B002E448E /* ApiLoginManager.swift in Sources */,
+				4070CEF224E45F3D002B3F01 /* ApiLoginQuery.swift in Sources */,
+				400BF73024E46C46002E448E /* AppWireframe.swift in Sources */,
+				400BF73324E46CA9002E448E /* IAppContext.swift in Sources */,
+				4070CEFD24E463C4002B3F01 /* ApiProvider.swift in Sources */,
+				4070CEFA24E46328002B3F01 /* IApiProvider.swift in Sources */,
 				406CA59E2483E98900294AAE /* ViewController+Constraint.swift in Sources */,
 				406CA5A12483EAE700294AAE /* ViewController+Keyboard.swift in Sources */,
 			);

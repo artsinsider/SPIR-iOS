@@ -1,0 +1,3 @@
+[submodule "Quickly"]
+	path = Quickly
+	url = ../../fgengine/quickly.git

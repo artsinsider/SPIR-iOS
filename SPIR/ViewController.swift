@@ -7,8 +7,16 @@
 //
 
 import UIKit
+import Quickly
 
 class ViewController: UIViewController {
+    
+    private lazy var _provider = ApiProvider(
+        url: URL(string: "https://terminal.tass.ru/api/v2")!
+    )
+    private lazy var _manager = ApiLoginManager(
+        apiProvider: self._provider
+    )
     
     private(set) lazy var loginLable: UILabel = {
         let view = UILabel()
@@ -74,6 +82,22 @@ class ViewController: UIViewController {
         self.view.backgroundColor = .white
         
         self.buildContent()
+        
+        self._manager.add(observer: self, priority: .ui)
+        self._manager.perform(username: "u4@u.ru", password: "1@#QWe")
     }
 
+}
+
+
+extension ViewController : ILoginManagerObserver {
+    
+    func didFinish(_ manager: ILoginManager, user: IUser) {
+        print("accessToken: \(user.accessToken)")
+    }
+    
+    func didFinish(_ manager: ILoginManager, error: ApiError) {
+        print("error: \(error)")
+    }
+    
 }
