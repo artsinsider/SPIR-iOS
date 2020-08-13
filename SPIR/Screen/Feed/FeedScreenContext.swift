@@ -8,8 +8,8 @@ class FeedScreenContext : IFeedScreenContext {
     
     var feedManager: IFeedManager
     
-    init(apiProvider: IApiProvider) {
-        self.feedManager = LoadingFeedManager()
+    init(apiProvider: IApiProvider, user: IUser) {
+        self.feedManager = ApiFeedManager(apiProvider: apiProvider, user: user)
     }
     
 }

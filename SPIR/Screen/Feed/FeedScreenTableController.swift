@@ -13,20 +13,29 @@ class FeedScreenTableController : QTableController, IQContextable {
         
         super.init(
             cells: [
-                FeedScreenLoadingCell.self
+                FeedScreenLoadingCell.self,
+                FeedScreenContentCell.self
             ]
         )
     }
     
     override func rebuild() {
-        self.sections = [
-            QTableSection(rows: [
+        var rows: [IQTableRow] = []
+        if self.context.feedManager.isLoading && !self.context.feedManager.isLoadedFirstPage {
+            rows.append(contentsOf: [
                 FeedScreenLoadingRow(),
                 FeedScreenLoadingRow(),
                 FeedScreenLoadingRow(),
                 FeedScreenLoadingRow(),
                 FeedScreenLoadingRow()
             ])
+        } else if self.context.feedManager.feed.count > 0 {
+            rows.append(contentsOf: self.context.feedManager.feed.compactMap({
+                return FeedScreenContentRow(feed: $0)
+            }))
+        }
+        self.sections = [
+            QTableSection(rows: rows)
         ]
         super.rebuild()
     }

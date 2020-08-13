@@ -34,6 +34,8 @@ class FeedScreenViewController : QTableViewController, IQContextable, IQRouterab
         self._tableController = FeedScreenTableController(
             context: self.context
         )
+        
+        self.context.feedManager.load()
     }
     
 }
@@ -41,6 +43,7 @@ class FeedScreenViewController : QTableViewController, IQContextable, IQRouterab
 extension FeedScreenViewController : IFeedManagerObserver {
     
     func didFinish(_ manager: IFeedManager, feed: [IFeed], isFirst: Bool) {
+        self._tableController.rebuild()
     }
     
     func didFinish(_ manager: IFeedManager, error: ApiError) {

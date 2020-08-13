@@ -11,7 +11,8 @@ class FeedWireframe< RouterType: IQWireframeDefaultRouter, ContextType: IUserCon
             QStackViewController(
                 viewController: FeedScreenViewController(
                     context: FeedScreenContext(
-                        apiProvider: self.context.apiProvider
+                        apiProvider: self.context.apiProvider,
+                        user: self.context.user
                     ),
                     router: FeedScreenRouter(
                         router: self

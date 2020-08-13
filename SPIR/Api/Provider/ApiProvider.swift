@@ -53,8 +53,28 @@ extension ApiProvider : IApiProvider {
                 } else {
                     success(response.user)
                 }
-            }
+        }
         )
     }
     
+    
+    func getFeeds(
+        accessToken: String,
+        limit: Int,
+        offset: Int,
+        success: @escaping (_ user: [IFeed]) -> Void,
+        failure: @escaping (_ error: ApiError) -> Void
+    ) -> IQApiQuery {
+        return self._provider.send(
+            request: try! ApiFeedQuery.Request(accessToken: accessToken, limit: limit, offset: offset),
+            response: ApiFeedQuery.Response(),
+            completed: { (request, response) in
+                if let error = response.apiError {
+                    failure(error)
+                } else {
+                    success(response.feeds)
+                }
+        }
+        )
+    }
 }

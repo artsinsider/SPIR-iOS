@@ -30,7 +30,7 @@
 		406F74F524E583E7006494FC /* FeedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F74F124E583E7006494FC /* FeedScreenViewController.swift */; };
 		406F74F824E5841A006494FC /* IFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F74F724E5841A006494FC /* IFeedManager.swift */; };
 		406F74FA24E5844C006494FC /* IFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F74F924E5844C006494FC /* IFeed.swift */; };
-		406F74FC24E58596006494FC /* LoadingFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F74FB24E58596006494FC /* LoadingFeedManager.swift */; };
+		406F74FC24E58596006494FC /* ApiFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F74FB24E58596006494FC /* ApiFeedManager.swift */; };
 		406F74FE24E58663006494FC /* FeedScreenTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F74FD24E58663006494FC /* FeedScreenTableController.swift */; };
 		406F750224E586C0006494FC /* FeedScreenLoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F750124E586C0006494FC /* FeedScreenLoadingCell.swift */; };
 		406F750424E5872B006494FC /* FeedScreenLoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 406F750324E5872B006494FC /* FeedScreenLoadingCell.xib */; };
@@ -46,6 +46,10 @@
 		744DCE1B2482992C00B51C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744DCE1A2482992C00B51C63 /* ViewController.swift */; };
 		744DCE202482992E00B51C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744DCE1F2482992E00B51C63 /* Assets.xcassets */; };
 		744DCE232482992E00B51C63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744DCE212482992E00B51C63 /* LaunchScreen.storyboard */; };
+		7460D19724E58BC8006C2B21 /* ApiFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D19624E58BC8006C2B21 /* ApiFeed.swift */; };
+		7460D19924E58D34006C2B21 /* ApiFeedQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D19824E58D34006C2B21 /* ApiFeedQuery.swift */; };
+		7460D19B24E59E35006C2B21 /* FeedScreenContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7460D19A24E59E35006C2B21 /* FeedScreenContentCell.xib */; };
+		7460D19E24E59E85006C2B21 /* FeedScreenContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D19D24E59E85006C2B21 /* FeedScreenContentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +86,7 @@
 		406F74F124E583E7006494FC /* FeedScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedScreenViewController.swift; sourceTree = "<group>"; };
 		406F74F724E5841A006494FC /* IFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFeedManager.swift; sourceTree = "<group>"; };
 		406F74F924E5844C006494FC /* IFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFeed.swift; sourceTree = "<group>"; };
-		406F74FB24E58596006494FC /* LoadingFeedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingFeedManager.swift; sourceTree = "<group>"; };
+		406F74FB24E58596006494FC /* ApiFeedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiFeedManager.swift; sourceTree = "<group>"; };
 		406F74FD24E58663006494FC /* FeedScreenTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedScreenTableController.swift; sourceTree = "<group>"; };
 		406F750124E586C0006494FC /* FeedScreenLoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedScreenLoadingCell.swift; sourceTree = "<group>"; };
 		406F750324E5872B006494FC /* FeedScreenLoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedScreenLoadingCell.xib; sourceTree = "<group>"; };
@@ -100,6 +104,10 @@
 		744DCE1F2482992E00B51C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		744DCE222482992E00B51C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		744DCE242482992E00B51C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7460D19624E58BC8006C2B21 /* ApiFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFeed.swift; sourceTree = "<group>"; };
+		7460D19824E58D34006C2B21 /* ApiFeedQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFeedQuery.swift; sourceTree = "<group>"; };
+		7460D19A24E59E35006C2B21 /* FeedScreenContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedScreenContentCell.xib; sourceTree = "<group>"; };
+		7460D19D24E59E85006C2B21 /* FeedScreenContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedScreenContentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				406F74F724E5841A006494FC /* IFeedManager.swift */,
-				406F74FB24E58596006494FC /* LoadingFeedManager.swift */,
+				406F74FB24E58596006494FC /* ApiFeedManager.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -190,6 +198,7 @@
 		406F74FF24E58690006494FC /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				7460D19C24E59E3D006C2B21 /* Content */,
 				406F750024E586A1006494FC /* Loading */,
 			);
 			path = Cell;
@@ -254,6 +263,7 @@
 			children = (
 				4070CEF324E460A2002B3F01 /* ApiQuery.swift */,
 				4070CEF124E45F3D002B3F01 /* ApiLoginQuery.swift */,
+				7460D19824E58D34006C2B21 /* ApiFeedQuery.swift */,
 			);
 			path = Query;
 			sourceTree = "<group>";
@@ -262,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				4070CEEF24E45E31002B3F01 /* ApiUser.swift */,
+				7460D19624E58BC8006C2B21 /* ApiFeed.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -311,6 +322,15 @@
 				744DCE242482992E00B51C63 /* Info.plist */,
 			);
 			path = SPIR;
+			sourceTree = "<group>";
+		};
+		7460D19C24E59E3D006C2B21 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				7460D19A24E59E35006C2B21 /* FeedScreenContentCell.xib */,
+				7460D19D24E59E85006C2B21 /* FeedScreenContentCell.swift */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +409,7 @@
 			files = (
 				406F750424E5872B006494FC /* FeedScreenLoadingCell.xib in Resources */,
 				400BF74224E47046002E448E /* LoginScreenViewController.xib in Resources */,
+				7460D19B24E59E35006C2B21 /* FeedScreenContentCell.xib in Resources */,
 				744DCE232482992E00B51C63 /* LaunchScreen.storyboard in Resources */,
 				744DCE202482992E00B51C63 /* Assets.xcassets in Resources */,
 			);
@@ -410,13 +431,16 @@
 				4070CEEE24E45D57002B3F01 /* IUser.swift in Sources */,
 				406F74F524E583E7006494FC /* FeedScreenViewController.swift in Sources */,
 				400BF73E24E46F17002E448E /* LoginScreen.swift in Sources */,
+				7460D19E24E59E85006C2B21 /* FeedScreenContentCell.swift in Sources */,
 				400BF74024E46FCF002E448E /* LoginScreenViewController.swift in Sources */,
+				7460D19724E58BC8006C2B21 /* ApiFeed.swift in Sources */,
 				406F74FA24E5844C006494FC /* IFeed.swift in Sources */,
 				406F74E624E56FB8006494FC /* IUserContext.swift in Sources */,
 				400BF73524E46CE0002E448E /* AppContext.swift in Sources */,
 				400BF72A24E46859002E448E /* ObserverPriority.swift in Sources */,
 				400BF72624E466DA002E448E /* ILoginManager.swift in Sources */,
 				744DCE172482992C00B51C63 /* AppDelegate.swift in Sources */,
+				7460D19924E58D34006C2B21 /* ApiFeedQuery.swift in Sources */,
 				400BF74524E472C9002E448E /* LoginScreenContext.swift in Sources */,
 				4070CEF024E45E31002B3F01 /* ApiUser.swift in Sources */,
 				4070CEF724E461C7002B3F01 /* ApiError.swift in Sources */,
@@ -430,7 +454,7 @@
 				400BF73024E46C46002E448E /* AppWireframe.swift in Sources */,
 				400BF73324E46CA9002E448E /* IAppContext.swift in Sources */,
 				406F74F224E583E7006494FC /* FeedScreen.swift in Sources */,
-				406F74FC24E58596006494FC /* LoadingFeedManager.swift in Sources */,
+				406F74FC24E58596006494FC /* ApiFeedManager.swift in Sources */,
 				4070CEFD24E463C4002B3F01 /* ApiProvider.swift in Sources */,
 				4070CEFA24E46328002B3F01 /* IApiProvider.swift in Sources */,
 				406CA59E2483E98900294AAE /* ViewController+Constraint.swift in Sources */,

@@ -13,4 +13,11 @@ protocol IApiProvider {
         failure: @escaping (_ error: ApiError) -> Void
     ) -> IQApiQuery
     
+    func getFeeds(
+        accessToken: String,
+        limit: Int,
+        offset: Int,
+        success: @escaping (_ user: [IFeed]) -> Void,
+        failure: @escaping (_ error: ApiError) -> Void
+    ) -> IQApiQuery
 }
