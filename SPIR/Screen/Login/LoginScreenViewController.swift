@@ -38,7 +38,7 @@ class LoginScreenViewController : QNibViewController, IQContextable, IQRouterabl
 extension LoginScreenViewController : ILoginManagerObserver {
     
     func didFinish(_ manager: ILoginManager, user: IUser) {
-        self.router.success(self)
+        self.router.success(self, user: user)
     }
     
     func didFinish(_ manager: ILoginManager, error: ApiError) {

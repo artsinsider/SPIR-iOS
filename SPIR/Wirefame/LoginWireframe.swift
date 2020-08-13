@@ -6,7 +6,7 @@ import Quickly
 
 protocol ILoginWireframeRouter : IQRouter {
     
-    func didAuthorized()
+    func didAuthorized(user: IUser)
 
 }
 
@@ -31,8 +31,8 @@ class LoginWireframe< RouterType: IQWireframeDefaultRouter & ILoginWireframeRout
 
 extension LoginWireframe : ILoginScreenRouter {
     
-    func success(_ viewController: LoginScreenViewController) {
-        self.router?.didAuthorized()
+    func success(_ viewController: LoginScreenViewController, user: IUser) {
+        self.router?.didAuthorized(user: user)
     }
     
 }

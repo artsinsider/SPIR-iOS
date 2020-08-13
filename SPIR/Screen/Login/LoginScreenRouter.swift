@@ -12,8 +12,8 @@ class LoginScreenRouter : ILoginScreenRouter {
         self._router = router
     }
     
-    func success(_ viewController: LoginScreenViewController) {
-        self._router?.success(viewController)
+    func success(_ viewController: LoginScreenViewController, user: IUser) {
+        self._router?.success(viewController, user: user)
     }
     
 }

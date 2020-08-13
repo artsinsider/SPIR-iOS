@@ -26,8 +26,8 @@ class AppWireframe< ContextType: IAppContext > : QAppWireframe< ContextType > {
 
 extension AppWireframe : ILoginWireframeRouter {
 
-    func didAuthorized() {
-        print("AAA!!!")
+    func didAuthorized(user: IUser) {
+        self.set(wireframe: FeedWireframe(router: self, context: UserContext(appContext: self.context, user: user)))
     }
     
 }

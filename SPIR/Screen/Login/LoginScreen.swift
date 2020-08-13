@@ -12,6 +12,6 @@ protocol ILoginScreenContext : IQContext {
 
 protocol ILoginScreenRouter : IQRouter {
     
-    func success(_ viewController: LoginScreenViewController)
+    func success(_ viewController: LoginScreenViewController, user: IUser)
     
 }
