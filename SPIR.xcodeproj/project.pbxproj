@@ -327,8 +327,8 @@
 		7460D19C24E59E3D006C2B21 /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				7460D19A24E59E35006C2B21 /* FeedScreenContentCell.xib */,
 				7460D19D24E59E85006C2B21 /* FeedScreenContentCell.swift */,
+				7460D19A24E59E35006C2B21 /* FeedScreenContentCell.xib */,
 			);
 			path = Content;
 			sourceTree = "<group>";
