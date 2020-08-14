@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,30 +20,45 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="u4@u.ru" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2oL-DI-4dv">
-                    <rect key="frame" x="159" y="280" width="97" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="u4@u.ru" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2oL-DI-4dv">
+                    <rect key="frame" x="107" y="200" width="200" height="50"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1@#QWe" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7rl-Gs-RHR">
-                    <rect key="frame" x="159" y="322" width="97" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ue-dx-oTO">
-                    <rect key="frame" x="184" y="468" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ue-dx-oTO">
+                    <rect key="frame" x="147" y="450" width="120" height="30"/>
+                    <color key="backgroundColor" red="0.836114943" green="0.89516705269999997" blue="0.99417775870000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
                     <connections>
                         <action selector="pressedWithLoginButton:" destination="-1" eventType="touchUpInside" id="x8Q-ST-Mhs"/>
                     </connections>
                 </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1@#QWe" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7rl-Gs-RHR">
+                    <rect key="frame" x="107" y="300" width="200" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="4tX-hC-Hnw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7rl-Gs-RHR" secondAttribute="trailing" constant="107" id="3kl-cr-Xp7"/>
+                <constraint firstItem="7rl-Gs-RHR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="107" id="Bgq-XE-Zyh"/>
+                <constraint firstItem="2oL-DI-4dv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="107" id="D8K-Fs-LTR"/>
+                <constraint firstItem="7rl-Gs-RHR" firstAttribute="top" secondItem="2oL-DI-4dv" secondAttribute="bottom" constant="50" id="EmF-On-myD"/>
+                <constraint firstItem="1Ue-dx-oTO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="147" id="XrK-IC-Iiz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1Ue-dx-oTO" secondAttribute="trailing" constant="147" id="eBc-5I-NnZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2oL-DI-4dv" secondAttribute="trailing" constant="107" id="nWS-pK-mP9"/>
+                <constraint firstItem="1Ue-dx-oTO" firstAttribute="top" secondItem="7rl-Gs-RHR" secondAttribute="bottom" constant="100" id="txo-Q8-WEQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2oL-DI-4dv" secondAttribute="bottom" constant="612" id="vT9-mt-jwO"/>
+                <constraint firstItem="2oL-DI-4dv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="156" id="yxb-EC-V0G"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="35" y="-14"/>
+            <point key="canvasLocation" x="34.782608695652179" y="-14.0625"/>
         </view>
     </objects>
 </document>

@@ -50,6 +50,17 @@
 		7460D19924E58D34006C2B21 /* ApiFeedQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D19824E58D34006C2B21 /* ApiFeedQuery.swift */; };
 		7460D19B24E59E35006C2B21 /* FeedScreenContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7460D19A24E59E35006C2B21 /* FeedScreenContentCell.xib */; };
 		7460D19E24E59E85006C2B21 /* FeedScreenContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D19D24E59E85006C2B21 /* FeedScreenContentCell.swift */; };
+		7460D1A124E6BDE1006C2B21 /* IMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D1A024E6BDE1006C2B21 /* IMessage.swift */; };
+		7460D1A424E6BE73006C2B21 /* ApiMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D1A324E6BE73006C2B21 /* ApiMessage.swift */; };
+		7460D1A624E6BF69006C2B21 /* ApiMessageQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D1A524E6BF69006C2B21 /* ApiMessageQuery.swift */; };
+		7460D1A924E6C86F006C2B21 /* MessageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D1A824E6C86F006C2B21 /* MessageScreen.swift */; };
+		7460D1AB24E6C883006C2B21 /* MessageScreenContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D1AA24E6C883006C2B21 /* MessageScreenContext.swift */; };
+		7460D1AD24E6C89D006C2B21 /* MessageScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D1AC24E6C89D006C2B21 /* MessageScreenRouter.swift */; };
+		7460D1AF24E6C8B3006C2B21 /* MessageScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D1AE24E6C8B3006C2B21 /* MessageScreenViewController.swift */; };
+		7460D1B124E6C8CD006C2B21 /* MessageScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7460D1B024E6C8CD006C2B21 /* MessageScreenViewController.xib */; };
+		7460D1B424E6D16D006C2B21 /* IMessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D1B324E6D16D006C2B21 /* IMessageManager.swift */; };
+		7460D1B624E6D181006C2B21 /* ApiMessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D1B524E6D181006C2B21 /* ApiMessageManager.swift */; };
+		7460D1B824E6D268006C2B21 /* MessageWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D1B724E6D268006C2B21 /* MessageWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +119,17 @@
 		7460D19824E58D34006C2B21 /* ApiFeedQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFeedQuery.swift; sourceTree = "<group>"; };
 		7460D19A24E59E35006C2B21 /* FeedScreenContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedScreenContentCell.xib; sourceTree = "<group>"; };
 		7460D19D24E59E85006C2B21 /* FeedScreenContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedScreenContentCell.swift; sourceTree = "<group>"; };
+		7460D1A024E6BDE1006C2B21 /* IMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMessage.swift; sourceTree = "<group>"; };
+		7460D1A324E6BE73006C2B21 /* ApiMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMessage.swift; sourceTree = "<group>"; };
+		7460D1A524E6BF69006C2B21 /* ApiMessageQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMessageQuery.swift; sourceTree = "<group>"; };
+		7460D1A824E6C86F006C2B21 /* MessageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageScreen.swift; sourceTree = "<group>"; };
+		7460D1AA24E6C883006C2B21 /* MessageScreenContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageScreenContext.swift; sourceTree = "<group>"; };
+		7460D1AC24E6C89D006C2B21 /* MessageScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageScreenRouter.swift; sourceTree = "<group>"; };
+		7460D1AE24E6C8B3006C2B21 /* MessageScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageScreenViewController.swift; sourceTree = "<group>"; };
+		7460D1B024E6C8CD006C2B21 /* MessageScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageScreenViewController.xib; sourceTree = "<group>"; };
+		7460D1B324E6D16D006C2B21 /* IMessageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMessageManager.swift; sourceTree = "<group>"; };
+		7460D1B524E6D181006C2B21 /* ApiMessageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMessageManager.swift; sourceTree = "<group>"; };
+		7460D1B724E6D268006C2B21 /* MessageWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageWireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +159,7 @@
 				400BF72F24E46C46002E448E /* AppWireframe.swift */,
 				400BF73624E46E82002E448E /* LoginWireframe.swift */,
 				406F74E924E5702C006494FC /* FeedWireframe.swift */,
+				7460D1B724E6D268006C2B21 /* MessageWireframe.swift */,
 			);
 			path = Wirefame;
 			sourceTree = "<group>";
@@ -155,6 +178,7 @@
 		400BF73A24E46EF2002E448E /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				7460D1A724E6C813006C2B21 /* Message */,
 				400BF73B24E46EF9002E448E /* Login */,
 				406F74EC24E583C3006494FC /* Feed */,
 			);
@@ -244,6 +268,7 @@
 			children = (
 				4070CEED24E45D57002B3F01 /* IUser.swift */,
 				406F74F924E5844C006494FC /* IFeed.swift */,
+				7460D1A024E6BDE1006C2B21 /* IMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,8 +276,9 @@
 		4070CEE924E45CF2002B3F01 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				400BF72B24E468FB002E448E /* Login */,
 				406F74F624E58408006494FC /* Feed */,
+				7460D1B224E6CBE9006C2B21 /* Message */,
+				400BF72B24E468FB002E448E /* Login */,
 				400BF72924E46859002E448E /* ObserverPriority.swift */,
 			);
 			path = Manager;
@@ -264,6 +290,7 @@
 				4070CEF324E460A2002B3F01 /* ApiQuery.swift */,
 				4070CEF124E45F3D002B3F01 /* ApiLoginQuery.swift */,
 				7460D19824E58D34006C2B21 /* ApiFeedQuery.swift */,
+				7460D1A524E6BF69006C2B21 /* ApiMessageQuery.swift */,
 			);
 			path = Query;
 			sourceTree = "<group>";
@@ -273,6 +300,7 @@
 			children = (
 				4070CEEF24E45E31002B3F01 /* ApiUser.swift */,
 				7460D19624E58BC8006C2B21 /* ApiFeed.swift */,
+				7460D1A324E6BE73006C2B21 /* ApiMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,6 +359,27 @@
 				7460D19A24E59E35006C2B21 /* FeedScreenContentCell.xib */,
 			);
 			path = Content;
+			sourceTree = "<group>";
+		};
+		7460D1A724E6C813006C2B21 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				7460D1A824E6C86F006C2B21 /* MessageScreen.swift */,
+				7460D1AA24E6C883006C2B21 /* MessageScreenContext.swift */,
+				7460D1AC24E6C89D006C2B21 /* MessageScreenRouter.swift */,
+				7460D1AE24E6C8B3006C2B21 /* MessageScreenViewController.swift */,
+				7460D1B024E6C8CD006C2B21 /* MessageScreenViewController.xib */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		7460D1B224E6CBE9006C2B21 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				7460D1B324E6D16D006C2B21 /* IMessageManager.swift */,
+				7460D1B524E6D181006C2B21 /* ApiMessageManager.swift */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +460,7 @@
 				400BF74224E47046002E448E /* LoginScreenViewController.xib in Resources */,
 				7460D19B24E59E35006C2B21 /* FeedScreenContentCell.xib in Resources */,
 				744DCE232482992E00B51C63 /* LaunchScreen.storyboard in Resources */,
+				7460D1B124E6C8CD006C2B21 /* MessageScreenViewController.xib in Resources */,
 				744DCE202482992E00B51C63 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,8 +472,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7460D1B624E6D181006C2B21 /* ApiMessageManager.swift in Sources */,
 				406F74FE24E58663006494FC /* FeedScreenTableController.swift in Sources */,
 				400BF74724E4737E002E448E /* LoginWireframe.swift in Sources */,
+				7460D1A424E6BE73006C2B21 /* ApiMessage.swift in Sources */,
 				744DCE1B2482992C00B51C63 /* ViewController.swift in Sources */,
 				4070CEF424E460A2002B3F01 /* ApiQuery.swift in Sources */,
 				406F750224E586C0006494FC /* FeedScreenLoadingCell.swift in Sources */,
@@ -441,22 +493,30 @@
 				400BF72624E466DA002E448E /* ILoginManager.swift in Sources */,
 				744DCE172482992C00B51C63 /* AppDelegate.swift in Sources */,
 				7460D19924E58D34006C2B21 /* ApiFeedQuery.swift in Sources */,
+				7460D1A924E6C86F006C2B21 /* MessageScreen.swift in Sources */,
 				400BF74524E472C9002E448E /* LoginScreenContext.swift in Sources */,
 				4070CEF024E45E31002B3F01 /* ApiUser.swift in Sources */,
 				4070CEF724E461C7002B3F01 /* ApiError.swift in Sources */,
+				7460D1AF24E6C8B3006C2B21 /* MessageScreenViewController.swift in Sources */,
 				400BF74624E472C9002E448E /* LoginScreenRouter.swift in Sources */,
 				400BF72D24E4690B002E448E /* ApiLoginManager.swift in Sources */,
 				406F74F324E583E7006494FC /* FeedScreenContext.swift in Sources */,
+				7460D1AB24E6C883006C2B21 /* MessageScreenContext.swift in Sources */,
 				406F74EA24E5702C006494FC /* FeedWireframe.swift in Sources */,
 				406F74F424E583E7006494FC /* FeedScreenRouter.swift in Sources */,
 				406F74E824E56FD4006494FC /* UserContext.swift in Sources */,
 				4070CEF224E45F3D002B3F01 /* ApiLoginQuery.swift in Sources */,
+				7460D1AD24E6C89D006C2B21 /* MessageScreenRouter.swift in Sources */,
+				7460D1A124E6BDE1006C2B21 /* IMessage.swift in Sources */,
+				7460D1B424E6D16D006C2B21 /* IMessageManager.swift in Sources */,
 				400BF73024E46C46002E448E /* AppWireframe.swift in Sources */,
 				400BF73324E46CA9002E448E /* IAppContext.swift in Sources */,
+				7460D1B824E6D268006C2B21 /* MessageWireframe.swift in Sources */,
 				406F74F224E583E7006494FC /* FeedScreen.swift in Sources */,
 				406F74FC24E58596006494FC /* ApiFeedManager.swift in Sources */,
 				4070CEFD24E463C4002B3F01 /* ApiProvider.swift in Sources */,
 				4070CEFA24E46328002B3F01 /* IApiProvider.swift in Sources */,
+				7460D1A624E6BF69006C2B21 /* ApiMessageQuery.swift in Sources */,
 				406CA59E2483E98900294AAE /* ViewController+Constraint.swift in Sources */,
 				406CA5A12483EAE700294AAE /* ViewController+Keyboard.swift in Sources */,
 			);

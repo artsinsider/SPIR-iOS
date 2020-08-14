@@ -57,7 +57,6 @@ extension ApiProvider : IApiProvider {
         )
     }
     
-    
     func getFeeds(
         accessToken: String,
         limit: Int,
@@ -76,5 +75,25 @@ extension ApiProvider : IApiProvider {
                 }
         }
         )
+    }
+    
+    func getMessage(
+        accessToken: String,
+        materialId: Int,
+        query: String,
+        success: @escaping (IMessage) -> Void,
+        failure: @escaping (ApiError) -> Void
+    ) -> IQApiQuery {
+             return self._provider.send(
+               request: try! ApiMessageQuery.Request(accessToken: accessToken, materialId: materialId, query: query),
+               response: ApiMessageQuery.Response(),
+               completed: { (request, response) in
+                   if let error = response.apiError {
+                       failure(error)
+                   } else {
+                    success(response.message)
+                   }
+           }
+           )
     }
 }
