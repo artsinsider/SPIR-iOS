@@ -60,7 +60,6 @@
 		7460D1B124E6C8CD006C2B21 /* MessageScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7460D1B024E6C8CD006C2B21 /* MessageScreenViewController.xib */; };
 		7460D1B424E6D16D006C2B21 /* IMessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D1B324E6D16D006C2B21 /* IMessageManager.swift */; };
 		7460D1B624E6D181006C2B21 /* ApiMessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D1B524E6D181006C2B21 /* ApiMessageManager.swift */; };
-		7460D1B824E6D268006C2B21 /* MessageWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460D1B724E6D268006C2B21 /* MessageWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,9 +177,9 @@
 		400BF73A24E46EF2002E448E /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				7460D1A724E6C813006C2B21 /* Message */,
 				400BF73B24E46EF9002E448E /* Login */,
 				406F74EC24E583C3006494FC /* Feed */,
+				7460D1A724E6C813006C2B21 /* Message */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -276,9 +275,9 @@
 		4070CEE924E45CF2002B3F01 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				400BF72B24E468FB002E448E /* Login */,
 				406F74F624E58408006494FC /* Feed */,
 				7460D1B224E6CBE9006C2B21 /* Message */,
-				400BF72B24E468FB002E448E /* Login */,
 				400BF72924E46859002E448E /* ObserverPriority.swift */,
 			);
 			path = Manager;
@@ -511,7 +510,6 @@
 				7460D1B424E6D16D006C2B21 /* IMessageManager.swift in Sources */,
 				400BF73024E46C46002E448E /* AppWireframe.swift in Sources */,
 				400BF73324E46CA9002E448E /* IAppContext.swift in Sources */,
-				7460D1B824E6D268006C2B21 /* MessageWireframe.swift in Sources */,
 				406F74F224E583E7006494FC /* FeedScreen.swift in Sources */,
 				406F74FC24E58596006494FC /* ApiFeedManager.swift in Sources */,
 				4070CEFD24E463C4002B3F01 /* ApiProvider.swift in Sources */,

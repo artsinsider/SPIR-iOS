@@ -17,4 +17,5 @@ protocol IFeed {
     var lead: String { get }
     
     var newsDate: Date { get }
+    
 }

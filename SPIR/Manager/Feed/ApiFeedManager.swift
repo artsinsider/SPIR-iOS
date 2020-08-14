@@ -5,6 +5,7 @@
 import Quickly
 
 class ApiFeedManager : IFeedManager {
+    
     var apiProvider: IApiProvider
     var user: IUser
     
@@ -20,7 +21,6 @@ class ApiFeedManager : IFeedManager {
     
     private var _observer: QObserver< IFeedManagerObserver >
     private var _apiQuery: IQApiQuery?
-    
     
     init(apiProvider: IApiProvider, user: IUser) {
         self.apiProvider = apiProvider

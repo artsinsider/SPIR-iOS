@@ -12,8 +12,8 @@ class MessageScreenRouter : IMessageScreenRouter {
         self._router = router
     }
     
-    func success(_ viewController: MessageScreenViewController, message: IMessage) {
-        self._router?.success(viewController, message: message)
+    func close(_ viewController: MessageScreenViewController) {
+        self._router?.close(viewController)
     }
     
 }

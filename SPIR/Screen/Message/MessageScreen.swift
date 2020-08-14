@@ -12,6 +12,6 @@ protocol IMessageScreenContext : IQContext {
 
 protocol IMessageScreenRouter : IQRouter {
 
-    func success(_ viewController: MessageScreenViewController, message: IMessage)
+    func close(_ viewController: MessageScreenViewController)
 
 }

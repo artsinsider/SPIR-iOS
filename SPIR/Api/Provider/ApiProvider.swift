@@ -53,7 +53,7 @@ extension ApiProvider : IApiProvider {
                 } else {
                     success(response.user)
                 }
-        }
+            }
         )
     }
     
@@ -61,7 +61,7 @@ extension ApiProvider : IApiProvider {
         accessToken: String,
         limit: Int,
         offset: Int,
-        success: @escaping (_ user: [IFeed]) -> Void,
+        success: @escaping (_ feed: [IFeed]) -> Void,
         failure: @escaping (_ error: ApiError) -> Void
     ) -> IQApiQuery {
         return self._provider.send(
@@ -73,27 +73,27 @@ extension ApiProvider : IApiProvider {
                 } else {
                     success(response.feeds)
                 }
-        }
+            }
         )
     }
     
     func getMessage(
         accessToken: String,
-        materialId: Int,
+        materialId: String,
         query: String,
-        success: @escaping (IMessage) -> Void,
-        failure: @escaping (ApiError) -> Void
+        success: @escaping (_ message: IMessage) -> Void,
+        failure: @escaping (_ error: ApiError) -> Void
     ) -> IQApiQuery {
-             return self._provider.send(
-               request: try! ApiMessageQuery.Request(accessToken: accessToken, materialId: materialId, query: query),
-               response: ApiMessageQuery.Response(),
-               completed: { (request, response) in
-                   if let error = response.apiError {
-                       failure(error)
-                   } else {
+        return self._provider.send(
+            request: try! ApiMessageQuery.Request(accessToken: accessToken, materialId: materialId, query: query),
+            response: ApiMessageQuery.Response(),
+            completed: { (request, response) in
+                if let error = response.apiError {
+                    failure(error)
+                } else {
                     success(response.message)
-                   }
-           }
-           )
+                }
+            }
+        )
     }
 }

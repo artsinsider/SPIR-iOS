@@ -26,6 +26,12 @@ class LoginScreenViewController : QNibViewController, IQContextable, IQRouterabl
         self.context.loginManager.remove(observer: self)
     }
     
+    override func didLoad() {
+        super.didLoad()
+        
+        self.view.backgroundColor = UIColor.white
+    }
+    
     @IBAction func pressed(loginButton: UIButton) {
         self.context.loginManager.perform(
             username: self._usernameField.text!,

@@ -13,10 +13,8 @@ protocol IMessageManager {
     func add(observer: IMessageManagerObserver, priority: ObserverPriority)
     func remove(observer: IMessageManagerObserver)
     
-    func perform(
-        username: String,
-        password: String
-    )
+    func loadIfNeeded()
+    func cancel()
     
 }
 

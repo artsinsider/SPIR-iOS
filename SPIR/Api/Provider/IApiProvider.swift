@@ -17,15 +17,15 @@ protocol IApiProvider {
         accessToken: String,
         limit: Int,
         offset: Int,
-        success: @escaping (_ user: [IFeed]) -> Void,
+        success: @escaping (_ feed: [IFeed]) -> Void,
         failure: @escaping (_ error: ApiError) -> Void
     ) -> IQApiQuery
     
     func getMessage(
         accessToken: String,
-        materialId: Int,
+        materialId: String,
         query: String,
-        success: @escaping (_ user: IMessage) -> Void,
+        success: @escaping (_ message: IMessage) -> Void,
         failure: @escaping (_ error: ApiError) -> Void
     ) -> IQApiQuery
 }

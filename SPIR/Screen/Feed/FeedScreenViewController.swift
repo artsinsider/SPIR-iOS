@@ -29,13 +29,46 @@ class FeedScreenViewController : QTableViewController, IQContextable, IQRouterab
     override func didLoad() {
         super.didLoad()
         
+        let stackbar = QStackbar()
+        stackbar.centerViews = [
+            QLabel(styleSheet: QLabelStyleSheet(
+                text: QText(
+                    text: "Feed",
+                    font: UIFont.systemFont(ofSize: 25),
+                    color: .systemBlue
+                ),
+                alignment: .center
+            ))
+        ]
+        self.stackbar = stackbar
+        
         self.view.backgroundColor = UIColor.white
         
         self._tableController = FeedScreenTableController(
-            context: self.context
+            context: self.context,
+            pressedDetail: { [weak self] feed in
+                guard let self = self else { return }
+                self.router.detail(self, feed: feed)
+            }
         )
         
         self.context.feedManager.load()
+    }
+    
+    override func finishInteractivePresent() {
+        super.finishInteractivePresent()
+        
+        if let selectedIndexPath = self.tableView?.indexPathForSelectedRow {
+            self.tableView?.deselectRow(at: selectedIndexPath, animated: true)
+        }
+    }
+    
+    override func didPresent(animated: Bool) {
+        super.didPresent(animated: animated)
+        
+        if let selectedIndexPath = self.tableView?.indexPathForSelectedRow {
+            self.tableView?.deselectRow(at: selectedIndexPath, animated: true)
+        }
     }
     
 }

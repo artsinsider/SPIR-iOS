@@ -7,9 +7,14 @@ import Quickly
 class FeedScreenTableController : QTableController, IQContextable {
     
     var context: IFeedScreenContext
+    var pressedDetail: (_ feed: IFeed) -> Void
 
-    init(context: IFeedScreenContext) {
+    init(
+        context: IFeedScreenContext,
+        pressedDetail: @escaping (_ feed: IFeed) -> Void
+    ) {
         self.context = context
+        self.pressedDetail = pressedDetail
         
         super.init(
             cells: [
@@ -38,6 +43,13 @@ class FeedScreenTableController : QTableController, IQContextable {
             QTableSection(rows: rows)
         ]
         super.rebuild()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch self.row(indexPath: indexPath) {
+        case let row as FeedScreenContentRow: self.pressedDetail(row.feed)
+        default: break
+        }
     }
     
 }
